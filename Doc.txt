@@ -1,0 +1,14 @@
+npm install
+npm install vue-router@4
+npm run dev
+npm install vue-template-compiler
+npm install vue-loader
+npm install laravel --mix@latest
+=====================
+webpack.mix.js:
+======================
+mix.js('resources/js/app.js', 'public/js')
+    .vue()
+    .postCss('resources/css/app.css', 'public/css', [
+        //
+]);
